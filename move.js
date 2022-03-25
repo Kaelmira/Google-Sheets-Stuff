@@ -1,6 +1,6 @@
 function move() {
   const spreadsheet = SpreadsheetApp.getActive().getActiveSheet();
-  const itemList = ['WAREHOUSE ITEMS','ARCHIVED ITEMS','OFFICE ORDER ITEMS','SMALL WARES ITEMS','SHAMROCK ITEMS','MISC ITEMS'];
+  const itemList = ['WAREHOUSE ITEMS','ARCHIVED ITEMS','OFFICE ORDER ITEMS','SMALL WARES ITEMS','SHAMROCK ITEMS','MISC ITEMS']; //this array should list all availble tabs in your spreadsheet.
 
   let sheetName = spreadsheet.getSheetName();
   let location = sheetName.match(/^\w+/)[0]; //not currently being used
